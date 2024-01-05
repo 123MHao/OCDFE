@@ -38,6 +38,10 @@ Code accompanying the paper "One-class deep feature extraction of nonlinear inde
 | -----------                                                                                                  | ----------- |
 | ![4](https://github.com/123MHao/OCDFE/assets/102200358/82314519-613d-48cd-b313-eb7030aee171)                 | The experimental implementation of the proposed OCDFE is depicted. Executed using the TensorFlow framework, the method initiated by utilizing ACM and STM to decouple the original vibration signal features, granting individual meanings to each feature. Subsequently, an encoder encompassing CPM functions as a feature extractor, learning features by mapping the data to the inner layers.      |
 
+# Result
+|                               |  OCDFE_SUFD   | OCDFE_ZZUli  |
+| -----------            |----------- | ----------- |
+|  t-SNE     | ![1](https://github.com/123MHao/OCDFE/assets/102200358/ed0c5c32-3db2-48b1-8165-a2190485df65) |![2](https://github.com/123MHao/OCDFE/assets/102200358/97c49f63-9c3d-4891-ae54-a5dc059d3694) |   
 
 # Acknowledgments
 
