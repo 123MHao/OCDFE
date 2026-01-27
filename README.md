@@ -28,6 +28,7 @@ Code accompanying the paper "One-class deep feature extraction of nonlinear inde
 * `DeepSVDD`:          Deep anomaly detection model.
 * `Ecod`:           Empirical cumulative distribution for anomaly detection.
 * `IF`:             Isolation Forest algorithm.
+* `Data`:train/validation/test splits, random seed settings
 * `Ocsvm`:             One-class SVM for anomaly detection.
 * `SVDD`:              SVDD algorithm for anomaly detection.
 * `t_SNE_utils`:       t-SNE package for 2-D visualization.
