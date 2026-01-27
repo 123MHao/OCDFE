@@ -24,11 +24,11 @@ Code accompanying the paper "One-class deep feature extraction of nonlinear inde
 * `sample_nice`:       The logarithmic probability distribution of independent decoupling feature set is obtained.
 * `sample_dcae`:       Obtain a low-dimensional depth feature set.
 * `Copod`:          Copula-based anomaly detection.
-* `Data_processing`:   Data preprocessing and cleaning.
+* `Data_processing`:   Signal segmentation, normalization.
+* `Data_splits_config`:train/validation/test splits, random seed settings
 * `DeepSVDD`:          Deep anomaly detection model.
 * `Ecod`:           Empirical cumulative distribution for anomaly detection.
 * `IF`:             Isolation Forest algorithm.
-* `Data`:train/validation/test splits, random seed settings
 * `Ocsvm`:             One-class SVM for anomaly detection.
 * `SVDD`:              SVDD algorithm for anomaly detection.
 * `t_SNE_utils`:       t-SNE package for 2-D visualization.
