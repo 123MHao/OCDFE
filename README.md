@@ -27,13 +27,11 @@ Code accompanying the paper "One-class deep feature extraction of nonlinear inde
 * `Sample_ACM+STM`:       The logarithmic probability distribution of independent decoupling feature set is obtained.
 * `Sample_CPM`:       Obtain a low-dimensional depth feature set.
 * `anomaly_detectors`: Implement six anomaly detectors: OCSVM, IF, SVDD, DeepSVDD, COPOD, ECOD.
-* `Visualization`:       t-SNE package for 2D visualization.
-
-* `Utils`:   Utility functions directory.
+* `Visualization`:       t-SNE package for 2D visualization
 * `config`:Environment setup and parameter settings.
-* `pyod`: detection library.
+* `pyod`: Anomaly detection library.
 * `requirements.txt`: Project dependency list.
-* `Utils`: Utility modules for reproducible experiments.  
+* `Utils`: Utility functions directory.
 
 
 
