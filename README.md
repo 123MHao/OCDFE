@@ -23,6 +23,7 @@ Code accompanying the paper "One-class deep feature extraction of nonlinear inde
 * `train_sufd_dcae`:   The CPM modules in the model OCDFE we built.
 * `sample_nice`:       The logarithmic probability distribution of independent decoupling feature set is obtained.
 * `sample_dcae`:       Obtain a low-dimensional depth feature set.
+* `Ocsvm`
 * `t_SNE_utils`:       t-SNE package for 2-D visualization.
 
 # Implementation details
