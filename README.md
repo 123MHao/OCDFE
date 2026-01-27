@@ -19,19 +19,25 @@ Code accompanying the paper "One-class deep feature extraction of nonlinear inde
 # File description
 
 
-* `train_ACM+STM`:   The ACM and STM modules in the model OCDFE we built.
-* `train_CPM`:   The CPM modules in the model OCDFE we built.
-* `sample_ACM+STM`:       The logarithmic probability distribution of independent decoupling feature set is obtained.
-* `sample_CPM`:       Obtain a low-dimensional depth feature set.
-* `Copod`:          Copula-based anomaly detection.
+
 * `Data_processing`:   Signal segmentation, normalization.
-* `Data_splits_config`:train/validation/test splits, random seed settings
-* `DeepSVDD`:          Deep anomaly detection model.
-* `Ecod`:           Empirical cumulative distribution for anomaly detection.
-* `IF`:             Isolation Forest algorithm.
-* `Ocsvm`:             One-class SVM for anomaly detection.
-* `SVDD`:              SVDD algorithm for anomaly detection.
-* `t_SNE_utils`:       t-SNE package for 2-D visualization.
+* `Data_splits_config`:train/validation/test splits and random seed settings.
+* `Train_ACM+STM`:   The ACM and STM modules in the model OCDFE we built.
+* `Train_CPM`:   The CPM modules in the model OCDFE we built.
+* `Sample_ACM+STM`:       The logarithmic probability distribution of independent decoupling feature set is obtained.
+* `Sample_CPM`:       Obtain a low-dimensional depth feature set.
+* `anomaly_detectors`: Implement six anomaly detectors: OCSVM, IF, SVDD, DeepSVDD, COPOD, ECOD.
+* `Visualization`:       t-SNE package for 2D visualization.
+
+* `Utils`:   Utility functions directory.
+* `config`:Environment setup and parameter settings.
+* `pyod`: detection library.
+* `requirements.txt`: Project dependency list.
+* `Utils`: Utility modules for reproducible experiments.  
+
+
+
+
 
 # Implementation details
 
