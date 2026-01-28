@@ -2,10 +2,8 @@
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import pickle
-import tensorflow_datasets as tfds
 from tensorflow import keras
 from tensorflow.keras import layers
-import tensorflow_addons as tfa
 import h5py
 import numpy as np
 import math
@@ -17,7 +15,6 @@ from sklearn.utils.validation import check_is_fitted
 from sklearn.utils import check_array, as_float_array
 # from Utils.data_utils import *
 # from Utils.Unet_utils import *
-from tensorflow.python.framework import ops
 
 def LoadData_pickle(path,name,type='rb'):
   with open(path+name+'.pkl', type) as f:
@@ -33,10 +30,10 @@ img_size = 1024
 img_channels = 1
 
 faults=['C0','C1','C2','C3','C4','C5','C6', 'C7','C8']
-root = './Results/'     #output data
+root = './Results_AE/'     #output data
 for fault in faults:
     # Build graph
-    ops.reset_default_graph()
+    # ops.reset_default_graph()
     # Build encoder
     inputs_=layers.Input(shape=(img_size, img_channels), name="image_input")
     # 2，神经网络
@@ -82,7 +79,7 @@ for fault in faults:
     # dcae.summary()
 
 
-    dir = './Results/model/model_last_' + str(99) + '.ckpt'
+    dir = './Results_AE/Z/model/model_last_' + str(99) + '.ckpt'
     print('Load weights from ', dir)
     dcae.load_weights(dir)
     new_enout=tf.keras.models.Model(inputs=inputs_,outputs=latent)
@@ -93,15 +90,15 @@ for fault in faults:
     # x_hat2 = dcae.call(datax_test).numpy()
     extracted_featuresx_test = new_enout.predict(datax_test)
     print(extracted_featuresx_test.shape)
-    with open('./Results/encoded_'+fault+'_test.pkl', 'wb') as f:
+    with open('./Results_AE/encoded_'+fault+'_test.pkl', 'wb') as f:
         pickle.dump(extracted_featuresx_test, f, pickle.HIGHEST_PROTOCOL)
 
 
-    x_T = LoadData_pickle(path='./Results_NICE/', name='encoded_' + fault + '_train', type='rb')    #input
+    x_T = LoadData_pickle(path='./Results/', name='encoded_' + fault + '_train', type='rb')    #input
     data_T = tf.reshape(x_T, shape=[-1, 1024, 1])
     extracted_features_T = new_enout.predict(data_T)
     print(extracted_features_T.shape)
-    with open('./Results/encoded_' + fault + '_train.pkl', 'wb') as f:
+    with open('./Results_AE/encoded_' + fault + '_train.pkl', 'wb') as f:
         pickle.dump(extracted_features_T, f, pickle.HIGHEST_PROTOCOL)
     #
 
