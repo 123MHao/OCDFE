@@ -1,4 +1,4 @@
-# OCDFE
+<img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/16b20197-2e07-4a95-bdbf-cdcf52d66664" /># OCDFE
 
 ## One-class deep feature extraction
 
@@ -23,10 +23,16 @@ Code accompanying the paper "One-class deep feature extraction of nonlinear inde
 * `Data_processing`:   Signal segmentation, normalization.
 * `Data_splits_config`:train/validation/test splits and random seed settings.
 * `Train_ACM+STM`:   The ACM and STM modules in the model OCDFE we built.
-* `Train_CPM`:   The CPM modules in the model OCDFE we built.
 * `Sample_ACM+STM`:       The logarithmic probability distribution of independent decoupling feature set is obtained.
+* `Train_CPM`:   The CPM modules in the model OCDFE we built.
 * `Sample_CPM`:       Obtain a low-dimensional depth feature set.
-* `anomaly_detectors`: Implement six anomaly detectors: OCSVM, IF, SVDD, DeepSVDD, COPOD, ECOD.
+  
+* `OCSVM`: One-class support vector machine.
+* `IF`:Isolated forest.
+* `SVDD`:Support vector data description.
+* `Deep SVDD`: Deep support vector data description.
+* `COPOD`:copula-based outlier detection.
+* `ECOD`: empirical-cumulative-distribution-based outlier detection.
 * `Visualization`:       t-SNE package for 2D visualization
 * `config`:Environment setup and parameter settings.
 * `pyod`: Anomaly detection library.
