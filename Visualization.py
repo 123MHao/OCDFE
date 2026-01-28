@@ -44,7 +44,7 @@ def scatter(x, colors):
 
 ############################################       input              ######################################################
 
-y0=np.ones([300])*0
+y0=np.ones([400])*0
 y1=np.ones([50])*1
 y2=np.ones([50])*2
 y3=np.ones([50])*3
@@ -57,7 +57,7 @@ y8=np.ones([50])*8
 
 y_test = np.hstack([y0, y1, y2, y3,y4 ,y5, y6, y7, y8]).astype(np.int64)
 
-dir = './Results/'
+dir = './Results_AE/'
 
 
 x0  = LoadData_pickle(path=dir, name='encoded_C0_test', type='rb')
