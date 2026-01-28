@@ -5,7 +5,6 @@ import pickle
 # import tensorflow_datasets as tfds
 from tensorflow import keras
 from tensorflow.keras import layers
-import tensorflow_addons as tfa
 import h5py
 import numpy as np
 import math
