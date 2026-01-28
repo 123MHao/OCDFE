@@ -1,5 +1,3 @@
-<img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/16b20197-2e07-4a95-bdbf-cdcf52d66664" /># OCDFE
-
 ## One-class deep feature extraction
 
 Code accompanying the paper "One-class deep feature extraction of nonlinear independent components for gearbox anomaly detection" by Xiaoyun Gong, Mengxuan Hao, Chuan Li, Wenliao Du, and Ziqiang Pu (Ready to be submitted for publication).
